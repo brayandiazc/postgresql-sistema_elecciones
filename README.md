@@ -6,7 +6,7 @@ Este proyecto es un sistema de votación automatizado diseñado para simular el 
 
 El objetivo principal del sistema es ofrecer una plataforma segura y automatizada para gestionar elecciones, registrar los votos y generar actas de verificación. Este sistema es completamente auditable y permite la verificación de los resultados con base en los votos emitidos y las actas generadas en cada mesa electoral. Utiliza **PostgreSQL** como base de datos para almacenar la información del proceso.
 
-´´´mermaid
+```mermaid
 erDiagram
     VOTANTE {
         int id
@@ -39,7 +39,7 @@ erDiagram
     CANDIDATO ||--o{ VOTO : recibe
     MESA ||--o{ VOTO : contiene
     MESA ||--o{ ACTA : genera
-´´´
+```
 
 ## Prerrequisitos o Dependencias
 
