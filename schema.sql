@@ -9,3 +9,10 @@ CREATE TABLE Votantes (
   nombre VARCHAR(100),
   cedula VARCHAR(20) UNIQUE
 );
+
+-- Crear la tabla de candidatos
+CREATE TABLE Candidatos (
+  id SERIAL PRIMARY KEY,
+  nombre VARCHAR(100),
+  partido VARCHAR(100)
+);
