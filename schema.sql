@@ -16,3 +16,9 @@ CREATE TABLE Candidatos (
   nombre VARCHAR(100),
   partido VARCHAR(100)
 );
+
+-- Crear la tabla de mesas electorales
+CREATE TABLE Mesas (
+  id SERIAL PRIMARY KEY,
+  ubicacion VARCHAR(100)
+);
