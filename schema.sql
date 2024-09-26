@@ -1,5 +1,6 @@
 -- Crear la base de datos
 CREATE DATABASE sistema_votacion;
+
 -- Conectar a la base de datos
 \c sistema_votacion;
 
@@ -22,3 +23,21 @@ CREATE TABLE Mesas (
   id SERIAL PRIMARY KEY,
   ubicacion VARCHAR(100)
 );
+
+-- Crear la tabla de votos
+CREATE TABLE Votos (
+  id SERIAL PRIMARY KEY,
+  votante_id INT REFERENCES Votantes(id),
+  candidato_id INT REFERENCES Candidatos(id),
+  mesa_id INT REFERENCES Mesas(id),
+  fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Crear la tabla de actas
+CREATE TABLE Actas (
+  id SERIAL PRIMARY KEY,
+  mesa_id INT REFERENCES Mesas(id),
+  votos_contados INT,
+  fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
