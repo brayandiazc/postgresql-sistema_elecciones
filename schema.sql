@@ -33,3 +33,11 @@ CREATE TABLE Votos (
   fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
+-- Crear la tabla de actas
+CREATE TABLE Actas (
+  id SERIAL PRIMARY KEY,
+  mesa_id INT REFERENCES Mesas(id),
+  votos_contados INT,
+  fecha TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
