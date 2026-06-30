@@ -14,6 +14,7 @@ feature concreta.
 | -------------------------------------------------- | ---------------------------------- |
 | [ai-agents.md](ai-agents.md)                       | Trabajo con agentes de IA          |
 | [database.md](database.md)                         | Modelado de datos en SQL           |
+| [naming.md](naming.md)                             | Nombres de repositorio y proyecto  |
 | [secrets.md](secrets.md)                           | Manejo de secretos y credenciales  |
 | [testing.md](testing.md)                           | Estrategia y estándares de testing |
 

@@ -61,8 +61,8 @@ graph LR
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/brayandiazc/sistemavotacion-postgresql.git
-cd sistemavotacion-postgresql
+git clone https://github.com/brayandiazc/sistema-votacion-postgresql.git
+cd sistema-votacion-postgresql
 ```
 
 ### 2. Crear la base de datos y el esquema
@@ -180,7 +180,7 @@ Este repositorio está **listo para IA**. El contexto para agentes vive en [`AGE
 
 ## Soporte
 
-¿Problemas o sugerencias? Abre un issue en [el repositorio](https://github.com/brayandiazc/sistemavotacion-postgresql/issues) o escribe a brayandiazc@gmail.com.
+¿Problemas o sugerencias? Abre un issue en [el repositorio](https://github.com/brayandiazc/sistema-votacion-postgresql/issues) o escribe a brayandiazc@gmail.com.
 
 ## Autores
 
